@@ -47,10 +47,16 @@ html, body {
     grid-row: 1/1;
 }
 
-.artworks-parent {
+.body-parent {
     grid-row: 2/3;
     grid-column: 1/1;
     width: 100%;
+}
+
+.art-grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }
 
 .footer-parent {
@@ -61,7 +67,7 @@ html, body {
     display: grid;
     grid-template-columns: 25% auto 25%;
     grid-template-rows: 1fr auto;
-    background-color: purple;
+    background-color: var(--main);
     gap: 10px;
     justify-items: start;
     align-items: center;
