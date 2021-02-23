@@ -1,3 +1,7 @@
 <div class="art-grid-parent">
-
+    {{#each this.artworkImages as |artwork|}}
+        <div class="thumbnail-parent">
+            <Thumbnail @fileName={{artwork}} />
+        </div>
+    {{/each}}
 </div>
