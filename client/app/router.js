@@ -13,4 +13,7 @@ Router.map(function () {
       path: ':id'
     });
   });
+  this.route('piece', {
+    path: '/art/:id'
+  });
 });

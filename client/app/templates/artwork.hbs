@@ -3,7 +3,10 @@
 <div class="art-grid-parent">
     {{#each @model as |artwork|}}
         <div class="thumbnail-parent">
-            <Thumbnail @fileName={{artwork.filePath}} />
+            <Thumbnail @fileName={{artwork.filePath}} @piece={{artwork}}/>
         </div>
     {{/each}}
+</div>
+<div>
+    {{outlet}}
 </div>

@@ -1,4 +1,6 @@
-<div class="thumbnail">
-    <img src="/assets/images/{{@fileName}}" alt="{{@fileName}}">
+<div>
+    <LinkTo @route="artwork.piece" @model={{@piece.id}} class="thumbnail">
+        <img src="/assets/images/{{@fileName}}" alt="{{@fileName}}">
+    </LinkTo>
 </div>
 
