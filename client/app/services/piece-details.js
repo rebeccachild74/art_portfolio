@@ -43,7 +43,6 @@ export default class PieceDetailsService extends Service {
     }
 
     get pieces() {
-        console.log("Getting Pieces")
         return this.storage.pieces;
     }
 
