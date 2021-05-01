@@ -7,7 +7,6 @@ export default class ArtworkRoute extends Route {
 
     model() {
         let pieces = this.pieceDetails.findAll();
-        console.log(pieces);
         return pieces;
     }
 }
