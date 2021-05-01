@@ -1,2 +1,9 @@
 {{page-title "Artwork"}}
-<ArtGrid />
+{{!-- <ArtGrid /> --}}
+<div class="art-grid-parent">
+    {{#each @model as |artwork|}}
+        <div class="thumbnail-parent">
+            <Thumbnail @fileName={{artwork.filePath}} />
+        </div>
+    {{/each}}
+</div>
