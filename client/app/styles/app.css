@@ -148,6 +148,11 @@ html, body {
     margin-block-end: 0px;
 }
 
+.piece-dimensions {
+    grid-column: 1/1;
+    margin: 10px 0px 0px 0px;
+}
+
 /* ABOUT PAGE STYLING */
 .about-page {
     display: grid;
