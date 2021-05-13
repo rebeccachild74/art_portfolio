@@ -13,4 +13,8 @@ export default class ContactFormComponent extends Component {
     get isSellingPrints() {
         return this.args.isSellingPrints ?? false;
     }
+
+    get isContactFormVisible() {
+        return false;
+    }
 }
