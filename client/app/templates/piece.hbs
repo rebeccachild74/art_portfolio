@@ -4,10 +4,14 @@
     <h1 class="piece-name">{{@model.name}}</h1>
     <h3 class="piece-medium">{{@model.medium}}</h3>
     <h4 class="piece-dimensions">{{@model.dimensions}}</h4>
-    <ContactButton
-        @isSellingPrints={{@model.sellingPrints}}
-        @dimensions="16 x 20"
-        @updateFormVisibility={{this.updateFormVisibility}}
-        class="order-print-icon"
-    />
+    {{#if @model.sellingPrints}}
+        <ContactButton
+            @dimensions="16 x 20"
+            @updateFormVisibility={{this.updateFormVisibility}}
+            class="order-print-icon"
+        />
+    {{/if}}
+    {{#if this.showContactForm}}
+        <ContactForm />
+    {{/if}}
 </div>

@@ -196,6 +196,18 @@ html, body {
     }
 }
 
+/* CONTACT FORM STYLING */
+.contact-form {
+    background-color: var(--main);
+    color: var(--highlight);
+    position: fixed;
+    z-index: 1;
+    left: 15%;
+    top: 30%;
+    width: 70%;
+    height: 40%;
+}
+
 /* ABOUT PAGE STYLING */
 .about-page {
     display: grid;
