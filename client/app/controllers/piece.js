@@ -10,4 +10,8 @@ export default class PieceController extends Controller {
         this.showContactForm = !this.showContactForm;
         console.log(`Clicked!! Now value is: ${this.showContactForm}`);
     }
+
+    setFormVisibilityFalse() {
+        this.showContactForm = false;
+    }
 }
