@@ -30,7 +30,7 @@ export default class PieceDetailsService extends Service {
                 name: 'Puffer Fish',
                 filePath: "puffer.jpg",
                 medium: 'Photograph, 35mm',
-                sellingPrints: true,
+                sellingPrints: false,
                 dimensions: '8 x 11',
             }),
             new Piece({
