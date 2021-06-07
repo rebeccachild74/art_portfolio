@@ -12,6 +12,9 @@
         />
     {{/if}}
     {{#if this.showContactForm}}
-        <ContactForm />
+        <ContactForm
+            @updateFormVisibility={{this.updateFormVisibility}}
+            @pieceName={{@model.name}}
+        />
     {{/if}}
 </div>

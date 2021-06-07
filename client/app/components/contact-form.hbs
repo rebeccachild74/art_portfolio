@@ -1,3 +1,26 @@
 <div class="contact-form">
-    <h1>CONTACT!</h1>
+    <div class="heading">
+      <h1>Contact me to order a print</h1>
+      <h2>{{@pieceName}}</h2>
+      <button class="close-contact-form" {{on "click" @updateFormVisibility}}>
+          <FaIcon
+                @icon="times-circle"
+                @prefix="far"
+            />
+      </button>
+    </div>
+    <form>
+      <label for="formName">Name:</label><br>
+      <input type="text" id="fname" name="formName" value="Enter your name">
+      <label for="formEmail">Email:</label><br>
+      <input type="text" id="fname" name="formEmail" value="Enter email">
+      <label for="cars">Print Dimensions:</label>
+      <select id="formSize" name="dimension">
+        <option value="6 x 10">6" x 10"</option>
+        <option value="12 x 20">12" x 20"</option>
+        <option value="11 x 10">11" x 12"</option>
+        <option value="24 x 32">24" x 32"</option>
+      </select>
+      <input type="submit" value="Submit">
+    </form>
 </div>
