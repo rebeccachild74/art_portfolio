@@ -1,7 +1,7 @@
 :root {
     --main: #4751b6;
     --highlight: #8a94ff;
-  }
+}
 
 html, body {
     padding: 0;
@@ -90,6 +90,7 @@ html, body {
 /* FOOTER STYLING */
 .footer-parent {
     width: 100%;
+    color: var(--highlight);
 }
 
 .footer {
@@ -104,24 +105,39 @@ html, body {
 }
 
 .footer-title {
-    color: var(--highlight);
     grid-column: 1/3;
     grid-row: 1/2;
     font-size: 1.25rem;
 }
 
-.footer-copyright {
+.instagram-icon, .instagram-icon:visited, .instagram-icon:active {
     color: var(--highlight);
+    font-size: 1.5rem;
+    grid-column: 3/3;
+    grid-row: 1/2;
+    justify-self: end;
+}
+
+.footer-copyright {
     grid-column: 3/3;
     grid-row: 2/2;
     justify-self: end;
 }
 
+.attributions {
+    grid-column: 1 / span 2;
+    grid-row: 2/2;
+}
+
+.attributions a, .attributions a:visited, .attributions a:active {
+    color: var(--highlight);
+}
+
 /* INFO PAGE STYLING */
 .info-page {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr min-content min-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr min-content min-content min-content;
     justify-items: center;
     margin: 10px;
     height: 70vh;
@@ -129,23 +145,67 @@ html, body {
 
 .full-size-img {
     max-width: 100%;
-    max-height: 90%;
-    grid-row: 1/3;
-    grid-column: 1/1;
+    max-height: 87%;
+    grid-row: 1/4;
+    grid-column: 1 / span 3;
 }
 
 .piece-name {
-    grid-row: 2/3;
-    grid-column: 1/1;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
+    grid-row: 2/4;
+    grid-column: 1 / span 3;
+}
+
+.piece-name h1 {
+    margin-bottom: 5px;
 }
 
 .piece-medium {
-    grid-row: 3/3;
-    grid-column: 1/1;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
+    grid-row: 3/4;
+    grid-column: 1 / span 3;
+    /* margin-block-start: 5px;
+    margin-block-end: 0px; */
+    margin: 0px;
+}
+
+.piece-dimensions {
+    grid-column: 1 / span 3;
+    grid-row: 4/4;
+    margin: 0px;
+}
+
+.order-print-icon {
+    grid-row: 2 / span 3;
+    grid-column: 3/3;
+    justify-self: start;
+    margin: 0px;
+    align-self: center;
+}
+
+.order-print-icon button {
+    margin: 0px;
+}
+
+.order-print-icon img {
+    max-height: 2.5rem;
+    padding-top: 2px;
+}
+
+@media (max-width: 768px) { 
+    .order-print-icon {
+        justify-self: center;
+    }
+}
+
+/* CONTACT FORM STYLING */
+.contact-form {
+    background-color: var(--main);
+    color: var(--highlight);
+    position: fixed;
+    z-index: 1;
+    left: 15%;
+    top: 30%;
+    width: 70%;
+    height: 40%;
 }
 
 /* ABOUT PAGE STYLING */

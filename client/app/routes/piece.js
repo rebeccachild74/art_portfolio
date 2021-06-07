@@ -10,4 +10,8 @@ export default class PieceRoute extends Route {
         console.log(selectedPiece);
         return selectedPiece;
     }
+
+    deactivate() {
+        this.controllerFor("piece").setFormVisibilityFalse();
+    }
 }
